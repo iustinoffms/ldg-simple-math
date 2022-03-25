@@ -8,8 +8,6 @@ function App() {
   function handleSubmit(e) {
     e.preventDefault();
     setResults(display(e.target[0].value, e.target[1].value));
-    e.target[0].value = "";
-    e.target[1].value = "";
   }
   return (
     <div className="App">

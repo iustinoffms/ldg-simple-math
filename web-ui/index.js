@@ -13,7 +13,4 @@ calculateButton.addEventListener("click", function (e) {
       return `<p>${item}</p>`;
     })
     .join("");
-
-  firstNrField.value = "";
-  secondNrField.value = "";
 });
