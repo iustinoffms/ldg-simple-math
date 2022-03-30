@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import display from "./display";
+import display from "ldg-simple-math";
 
 function App() {
   const [results, setResults] = useState([]);
@@ -32,8 +32,8 @@ function App() {
       </form>
       <div id="display-results">
         Results
-        {results.map((result) => {
-          return <p>{result}</p>;
+        {results.map((result, i) => {
+          return <p key={i}>{result}</p>;
         })}
       </div>
     </div>
