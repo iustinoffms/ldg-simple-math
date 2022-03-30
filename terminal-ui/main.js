@@ -1,5 +1,5 @@
 const { text } = require("stream/consumers");
-const display = require("../domain/display");
+const display = require("../ldg-simple-math/display");
 
 const readline = require("readline").createInterface({
   input: process.stdin,
