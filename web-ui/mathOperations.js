@@ -21,26 +21,3 @@ SimpleMathOperations.prototype.multiply = function () {
 SimpleMathOperations.prototype.divide = function () {
   return Number(this.a) / Number(this.b);
 };
-
-module.exports = SimpleMathOperations;
-
-function Calculator(a, b) {
-  function sum() {
-    return this.a + this.b;
-  }
-  function substract(a, b) {
-    return this.a - this.b;
-  }
-}
-
-const useCacultaor = new Calculator(a, b);
-
-const resultOfAdd = useCacultaor.sum();
-
-const calculator = {
-  a: 2,
-  b: 3,
-  add: function () {
-    return this.a + this.b;
-  },
-};

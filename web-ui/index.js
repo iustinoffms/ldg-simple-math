@@ -7,7 +7,7 @@ calculateButton.addEventListener("click", function (e) {
   e.preventDefault();
 
   const results = display(firstNrField.value, secondNrField.value);
-
+  console.log(results);
   displayResults.innerHTML = results
     .map((item) => {
       return `<p>${item}</p>`;
